@@ -311,6 +311,20 @@ a:hover{
     .dropBton{
         display: block;
     }
+    
+    #banner{
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightContent{
+        position: initial;
+        margin-top: 250px;
+    }
+
+    .rightContent h2{
+        width: 80vw;
+    }
 
     #subscription{
         flex-wrap: wrap;
@@ -334,8 +348,12 @@ a:hover{
         width: 50vw;
     }
 
-    .rightContent{
-        left: 30px;
+    .rightContent h2{
+        font-size: 1.5rem;
+    }
+
+    .headProducts h2{
+        font-size: 2rem;
     }
 
     .imgItems{

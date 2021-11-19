@@ -9,15 +9,19 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* Top Bar */
+/* Top Bar and footer */
 
-.topBar{
+.topBar,footer{
     background-color: #222222;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px 10px 60px;
+    padding: 10px;
+}
+
+footer{
+    flex-direction: column;
 }
 
 .topBar ul{
@@ -31,21 +35,24 @@ body{
 
 /* Nav Bar */
 
-.navBar{
+nav,#subscription{
     background-color: #F0A83E;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 40px;
 }
 
-.navBar ul{
+nav{
+    padding: 25px 30px;
+}
+
+nav ul{
     display: flex;
     list-style-type: none;
 }
 
-.navBar ul li{
+nav ul li{
     margin-left: 30px;
 }
 
@@ -133,15 +140,6 @@ a:hover{
     margin: 20px 0;
 }
 
-.rightContent button{
-    background-color: #F0A83E;
-    border-radius: 15px;
-    border-style: none;
-    color: white;
-    font-size: 1.25rem;
-    padding: 20px 30px;
-}
-
 /* Products Section */
 
 #products{
@@ -224,15 +222,14 @@ a:hover{
     background-color: #F0A83E;
 }
 
+.bannerBtn{
+    background-color: #F0A83E;
+}
+
 /* Subscription Section  */
 
 #subscription{
-    align-items: center;
-    background-color: #F0A83E;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 [class$="Sub"]{
@@ -290,25 +287,13 @@ a:hover{
     color: #8A8787;
 }
 
-/* Footer  */
-
-.footBar{
-    background-color: #222222;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
 
 @media (max-width: 768px ) {
-    .navBar ul{
+    nav ul{
         display: none;
     }
 
-    .dropDown{
-        display: block;
-    }
-
-    .dropBton{
+    .dropDown,.dropBton{
         display: block;
     }
     
